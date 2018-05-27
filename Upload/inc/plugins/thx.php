@@ -121,7 +121,9 @@ function thx_activate()
 	
 	find_replace_templatesets("postbit", '#button_delete_pm([^\<]*)<\/div>#is', 'button_delete_pm$1</div>{$post[\'thxdsp_outline\']}');
 	find_replace_templatesets("postbit", '#'.preg_quote('{$post[\'button_quote\']}').'#', '{$post[\'button_quote\']}{$post[\'thanks\']}');
-	find_replace_templatesets("postbit_classic", '#button_delete_pm([^\<]*)<\/div>#is', 'button_delete_pm$1}$2</div>{$post[\'thxdsp_outline\']}');
+//	find_replace_templatesets("postbit_classic", '#button_delete_pm([^\<]*)<\/div>#is', 'button_delete_pm$1}$2</div>{$post[\'thxdsp_outline\']}');
+//	find_replace_templatesets("postbit_classic", '#'.preg_quote('{$post[\'button_quote\']}').'#', '{$post[\'button_quote\']}{$post[\'thanks\']}');
+	find_replace_templatesets("postbit_classic", '#button_delete_pm([^\<]*)<\/div>#is', 'button_delete_pm$1</div>{$post[\'thxdsp_outline\']}');
 	find_replace_templatesets("postbit_classic", '#'.preg_quote('{$post[\'button_quote\']}').'#', '{$post[\'button_quote\']}{$post[\'thanks\']}');
 		
 	find_replace_templatesets("headerinclude", "#".preg_quote('{$stylesheets}').'#',

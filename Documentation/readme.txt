@@ -29,3 +29,7 @@ Current Localization:
 - espanol
 - french
 - italiano
+
+Thanks plugin works well with ChangUonDyU - Advanced Statistics plugin. You can download the latest version of ChangUonDyU - Advanced Statistics (compatible with MyBB 1.8) from the link below:
+
+ChangUonDyU - Advanced Statistics download: (Mods Site) https://community.mybb.com/mods.php?action=view&pid=1125
