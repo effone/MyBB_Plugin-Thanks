@@ -65,11 +65,11 @@ function thx_install()
 	
 	if(!$db->field_exists("thx", "users"))
 	{
-		$sq[] = "ALTER TABLE ".TABLE_PREFIX."users ADD `thx` INT NOT NULL, ADD `thxcount` INT NOT NULL, ADD `thxpost` INT NOT NULL";
+		$sq[] = "ALTER TABLE ".TABLE_PREFIX."users ADD `thx` INT NOT NULL DEFAULT '0', ADD `thxcount` INT NOT NULL DEFAULT '0', ADD `thxpost` INT NOT NULL DEFAULT '0'";
 	}
 	elseif (!$db->field_exists("thxpost", "users"))		
 	{
-		$sq[] = "ALTER TABLE ".TABLE_PREFIX."users ADD `thxpost` INT NOT NULL";
+		$sq[] = "ALTER TABLE ".TABLE_PREFIX."users ADD `thxpost` INT NOT NULL DEFAULT '0'";
 	}
 	
 	if($db->field_exists("thx", "posts"))
